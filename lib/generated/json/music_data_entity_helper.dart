@@ -1,4 +1,4 @@
-import 'file:///C:/Users/DogWa/AndroidStudioProjects/flutter_demo/lib/models/music_data_entity.dart';
+import 'package:flutter_demo/models/music_data_entity.dart';
 
 musicDataEntityFromJson(MusicDataEntity data, Map<String, dynamic> json) {
 	if (json['result'] != null) {

@@ -1,7 +1,8 @@
 import "package:flutter/material.dart";
 import 'file:///C:/Users/DogWa/AndroidStudioProjects/flutter_demo/lib/models/music_data_entity.dart';
+import 'file:///C:/Users/DogWa/AndroidStudioProjects/flutter_demo/lib/models/comment_data_entity.dart';
 import "../../generated/json/base/json_convert_content.dart";
-import "../../generated/json/music_data_entity_helper.dart";
+
 import "../../net/httpManager.dart";
 import "../../net/resultData.dart";
 HttpManager http = HttpManager.getInstance();
@@ -29,10 +30,10 @@ class _NetworkState extends State<NetworkPage> {
       appBar: AppBar(
         title:Text('NETWORK'),
         leading: IconButton(icon: Icon(Icons.menu),onPressed: () async{
-          var res = await http.postFormData('/search',params: {'keywords':'海阔天空'});
+          var res = await http.postFormData('/comment/music',params: {'id':'186016','limit':1});
           if(!(res is ResultData)){
-            MusicDataEntity musicDataEntity = JsonConvert.fromJsonAsT<MusicDataEntity>(res);
-            print(musicDataEntity.code);
+            CommentDataEntity commentDataEntity = JsonConvert.fromJsonAsT<CommentDataEntity>(res);
+            print(commentDataEntity.total);
           }
         }),
       ),
