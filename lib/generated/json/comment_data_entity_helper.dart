@@ -1,4 +1,4 @@
-import 'file:///C:/Users/DogWa/AndroidStudioProjects/flutter_demo/lib/models/comment_data_entity.dart';
+import '../../models/comment_data_entity.dart';
 
 commentDataEntityFromJson(CommentDataEntity data, Map<String, dynamic> json) {
 	if (json['isMusician'] != null) {
