@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:oktoast/oktoast.dart';
+//import '../../routes/routes.dart';
 
 class TestPage extends StatefulWidget {
   @override
@@ -31,7 +32,7 @@ class _TestPageState extends State<TestPage> {
           IconButton(
             icon:Icon(Icons.search),
             onPressed: (){
-              print('search');
+              //new Routes().navigateTo(context,'/data_share');
             },
           ),
           IconButton(
