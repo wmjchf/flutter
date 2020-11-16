@@ -2,13 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter/services.dart';
+import 'package:flustars/flustars.dart';
+//import 'package:sp_util/sp_util.dart';
 import './pages/Login/login.dart';
 import 'pages/ListView/listView.dart';
 import 'pages/Test/test.dart';
 import 'pages/TabBar/tabbar.dart';
 import 'pages/Network/network.dart';
 import 'pages/DataShare/dataShare.dart';
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SpUtil.getInstance();
   runApp(MyApp());
   if(Platform.isAndroid){
     SystemUiOverlayStyle style = SystemUiOverlayStyle(
