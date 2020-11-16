@@ -7,6 +7,7 @@ import 'pages/ListView/listView.dart';
 import 'pages/Test/test.dart';
 import 'pages/TabBar/tabbar.dart';
 import 'pages/Network/network.dart';
+import 'pages/DataShare/dataShare.dart';
 void main() {
   runApp(MyApp());
   if(Platform.isAndroid){
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: TestPage()
+      home: DataShare()
     );
   }
 }

@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import 'file:///C:/Users/DogWa/AndroidStudioProjects/flutter_demo/lib/models/music_data_entity.dart';
-import 'file:///C:/Users/DogWa/AndroidStudioProjects/flutter_demo/lib/models/comment_data_entity.dart';
+import '../../models/music_data_entity.dart';
+import '../../models/comment_data_entity.dart';
 import "../../generated/json/base/json_convert_content.dart";
 
 import "../../net/httpManager.dart";
