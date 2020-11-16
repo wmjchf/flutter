@@ -22,11 +22,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      builder: (BuildContext context,Widget child){
+        // child为MaterialApp;
+        return child;
+      },
       theme: ThemeData(
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: NetworkPage()
+      home: TestPage()
     );
   }
 }
