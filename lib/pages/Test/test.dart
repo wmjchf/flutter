@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:oktoast/oktoast.dart';
 
 class TestPage extends StatefulWidget {
   @override
@@ -20,7 +21,10 @@ class _TestPageState extends State<TestPage> {
         leading: IconButton(
           icon:Icon(Icons.menu),
           onPressed: (){
-            print('menu');
+            showToast(
+                "content",
+              position: ToastPosition.bottom
+            );
           },
         ),
         actions: <Widget>[
