@@ -1,23 +1,20 @@
-//import 'package:fluro/fluro.dart';
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import '../pages/DataShare/dataShare.dart';
 import '../pages/Test/test.dart';
-
+import '../pages/DataShare/dataShare.dart';
 
 class Routes {
   //static final FluroRouter router = new FluroRouter();
   static const root = '/';
   static const data_share = '/data_share';
 
+
   void _config() {
-
-    // router.define(root, handler: Handler(handlerFunc: (context, params) => TestPage()));
-    //
-    // router.define(data_share, handler: Handler(handlerFunc: (context, params) => DataShare()));
-
     // router.define(
-    //     '$order_details/:id', handler: Handler(handlerFunc: (context, params) => OrderDetails(int.parse(params['id'][0]))));
-
+    //     root, handler: Handler(handlerFunc: (context, params) => TestPage()));
+    //
+    // router.define(
+    //     data_share, handler: Handler(handlerFunc: (context, params) => DataShare()));
   }
 
   // Future navigateTo(BuildContext context, String path,[String param='']){
@@ -35,12 +32,11 @@ class Routes {
   static Routes _instance;
 
   Routes._() {
-   // _config();
+    _config();
   }
   static Routes _getInstance() {
     if (_instance == null) {
-      _instance = null;
-      //_instance = new Routes._();
+      _instance = new Routes._();
     }
     return _instance;
   }
