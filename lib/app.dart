@@ -6,6 +6,7 @@ import 'pages/TabBar/tabbar.dart';
 import 'pages/Network/network.dart';
 import 'pages/DataShare/dataShare.dart';
 //import './routes/routes.dart';
+import 'pages/ProviderView/providerView.dart';
 class App extends StatefulWidget {
   @override
   _AppState createState() => _AppState();
